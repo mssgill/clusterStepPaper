@@ -1,0 +1,40 @@
+The abundances and masses of galaxy clusters provide an important constraint on 
+cosmology ( cite Weinberg ). Weak lensing is the most direct way to measure cluster
+masses for large optical surveys such as the Dark Energy Survey (DES), which due to the depth and
+size observed will very accurately measure the halo mass function.
+Measuring the correlated distortion in the shape of galaxies caused by lensing is complicated
+by the distortion of observed images caused by the atmosphere and telescope optics, called the 
+Point Spread Function or PSF. Shape measurement pipelines have been developed to remove the 
+distortion caused by the PSF and accurately measure the lensing signal. Previous studies have 
+shown the importance of calibrating shape measurement pipelines for a weak lensing
+measurement of cluster mass (Applegate et al 2012). The mass of clusters measured by four different 
+groups were systematically biased, which the authors concluded was probably dominantly due 
+to shape measurement bias.
+
+Previous image simulation challenges were used to determine the accuracy of shape measurement pipelines. 
+Four publicly available weak lensing challenges STEP1, STEP2, GREAT08, GREAT10 used blinded image
+simulations to characterize the shape measurement bias created by different lensing pipelines. Results from these challenges have been used to calibrate shape measurement pipelines ( cite applegate, oguri ) and provide insight for further pipeline development. These previous challenges focused on calibrating shear measurement pipelines in the cosmic shear regime ( $| \gamma | < 0.6$ ) and on the importance
+of shape measurement bias for the shear power spectrum of large scale structure. These image simulations
+were created to study how specific galaxy and PSF properties affected the accuracy of 
+shape measurements, rather than on the total shape measurement bias expected for any specific 
+optical survey.
+
+To determine the error on the cluster mass measurement in a specific survey due to shape measurement bias it is important to use image simulations that have similar properties to the data. 
+The size, shape, morphology, and signal-to-noise ratio of sources all impact the accuracy of the 
+lensing pipelines, as does the strength of the lensing signal. For the cluster shear regime
+both the quadratic (Q) and multiplicative (M) shape measurement bias affect the lensing signal, and
+it is important to quantify these on images with simulated shear comparable to the shear observed around large galaxy clusters. For an accurate characterization of the level of shear measurement bias, it is important to test the current implementation of lensing algorithms. There are several new implementations
+of lensing pipelines ( Berstein et al) being tested for implementation in DES that are included in this project, which have not been run in previous image simulation challenges.
+ 
+The Cluster SHear TEsting Program tested eight weak lensing pipelines on images of constant shear
+( $|\gamma| = [0.03, 0.06, 0.09, 0.15]$ ) with galaxy and PSF properties that simulate the properties
+of data that will be observed with DES. Shape measurement errors were quantified by the Q, M and C
+determined by 
+\begin{equation}
+\hat{\gamma} = Q*(\gamma_m)^2 + M*(\gamma_m) + C
+\end {equation}
+where $\hat{\gamma}$ is the true shear and $\gamma_m$ is the measured shear. Lensing pipelines
+were evaluated to determine if their shape measurement bias was constant as a function of simulated redshift which is important to the accuracy of the halo mass function. The bias as a function of redshift determined for the lensing pipelines was used to model the expected error in the cluster mass from shape measurement bias. In each mass and redshift bin expected for the stacked weak lensing analysis of DES, the NFW reduced shear profile of the average halo was transformed by the shear measurement bias. This biased NFW was fit to determine what halo mass
+would be measured from this biased shear profile. The true and biased mass were compared to determine the percentage error on the mass, due to shape measurement bias.
+
+In this paper section 1 details the image simulations used in this project, section 2 ............

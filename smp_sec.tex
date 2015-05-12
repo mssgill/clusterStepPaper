@@ -1,0 +1,90 @@
+There are eight weak lensing pipelines that submitted 
+results for the CSTEP project, shown in Table \ref{table:smp}.
+There are several lensing pipelines tested in this challenge that could potentially
+be used to create shear catalogs for DES. These implementations
+represent a broad range of lensing pipeline types, and can be divided
+into four groups. Methods are grouped using roughly the same criteria 
+as in STEP2 \citep{STEP2}. A short description of the methods is
+included below with a detailed pipeline description included in
+Appendix \ref{App:shpipe}.\\
+
+\subsection{Red class methods}
+The red class methods (DE, IM, PK, KM) are based on the oldest 
+shape measurement method KSB+ developed by 
+\citet{KSB}. As in STEP2, red class methods are
+defined as those that measure combinations of
+moments of each galaxy image $I(x)$ using a Gaussian 
+weighting function. Various implementations
+of this class of methods have been studied in previous shape
+measurement challenges, and the accuracy has been shown 
+to vary widely \citep{STEP2, GREAT10}.  Two of the red class lensing
+pipeline implementations included in CSTEP have performed well on
+previous image simulations challenges (DE, KM). Other 
+red class implementations that were calibrated on
+simulated image data have been used in several recent 
+weak lensing analyses\citep[e.g.][]{Gruen_s, Apple, TS}. Many of the
+large weak lensing cluster studies have used red class
+methods \citep{HH}, and KSB+ methods are the most common
+method used to measure the mass of clusters using weak lensing.
+ 
+\subsection{Green class methods}
+The green class methods (GM, I3) are commonly known as model fitting
+methods. These methods convolve various models of galaxies with different 
+parameterizations, including their intrinsic shape, with the PSF and
+determine those that best fit the galaxy image. The green class methods
+\textsc{lensfit} and \textsc{DeepZot} were among the best performing 
+methods in GREAT08 and GREAT10, and im3shape has been shown 
+to perform well on the GREAT08 and GREAT10 data \citep{Jzun}. 
+A green class method \textsc{lensfit}, was 
+the lensing pipeline for the Canada-France-Hawaii 
+Telescope Lensing Survey (CFHTLenS) \citep{CHey}. This catalog 
+was then used for several scientific analyses, \citep[e.g.][]{CH1,
+  CH2, CH3}. 
+
+\subsection{Blue class methods}
+The blue class methods (MJ) are methods which model the
+galaxy images as a sum of orthonormal Gauss-Laguerre polynomial
+functions, commonly known as \textsc{shapelets}. The MJ
+method competed in the STEP1, STEP2, and GREAT08 challenge. 
+
+
+\subsection{Purple class methods}
+The purple class is used to describe a method significantly different from the
+three main approaches outlined above, Fourier Domain Null Testing (FDNT,
+\citealt{Bern}). In FDNT, the surface brightness profiles of PSF and
+observed galaxy are transformed to Fourier space, where the latter is
+de-convolved by dividing by the former. Testing the Fourier
+representation of the galaxy for roundness after applying an inverse
+shear, a likelihood of shears is determined. The information used in
+the roundness test is limited to frequencies below those rendered
+infinitely noisy by the PSF. FDNT is known to perform very well on low
+noise simulations \citep{Bern} but has not been applied yet to
+observed data for a scientific analysis.
+ 
+\begin{table}
+\begin{center}
+  \begin{tabular}{| c | c | c| c | }
+    \hline 
+     Method & Key & Contributor & Class \\
+    \hline
+     DEIMOS & DE &  P. Melchior & Red  \\
+    \hline
+    IMCAT & IM & J. Young & Red  \\
+    \hline
+    ksbm &  KM & P. Melchior &  Red \\
+    \hline
+    PKSB & PK & D. Gruen & Red \\
+    \hline
+     Gaussian Mixtures & GM & E. Sheldon & Green \\
+    \hline
+     im3shape &  I3 &  B. Rowe & Green \\
+    \hline
+     Bernstein and Jarvis (2002) & MJ &  M. Jarvis & Blue \\
+    \hline
+     PFDNT &  PF & D. Gruen & Purple \\
+    \hline
+  \end{tabular}
+\end{center}
+\caption{ A summary of the lensing pipelines used to analyze CSTEP simulated images. }
+\label{table:smp}
+\end{table}

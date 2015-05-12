@@ -1,0 +1,123 @@
+The expected statistical errors on the stacked cluster weak lensing
+measurement for DES are dominated by the density of sources, and the 
+number of clusters present in each mass and redshift bin. The statistical error we model
+combines the scatter due to shape noise in background galaxies, and the
+scatter due to cluster halos not being spherical mass distributions as
+described in \citep{obscos, mbecker}. To estimate the number of background galaxies per arcmin$^2$ ($\overline{ngal}$)
+and their mean redshift for a survey like DES we use a redshift 
+distribution of galaxies 
+\begin{equation}
+f(z) = z^m exp(-( z/z_* )^{\beta}) 
+\end{equation}
+where $m=2.0 $, $z_*=0.5$ and $\beta = 2.0 $ as given in
+\citep{obscos}. To determine the number of background sources at a
+given redshift the background fraction of galaxies is
+\begin{equation}
+F_{bg} = \frac{\int_z^{\infty} dz' f(z')}{\int_0^{\infty} dz' f(z')}
+\end{equation}
+which is then used to determine the number of galaxies in sq. arcmin.
+\begin{equation}
+\overline{ngal}  = 10 F_{bg}(z)
+\end{equation}
+for the DES survey \citep{edr}. The average redshift of sources
+behind the lens for each bin is shown in \ref{tab:state}
+\indent
+The statistical error or mass uncertainty $\Delta  ln M $ as
+described in \citet{obscos} for stacked weak lensing is :
+\begin{equation}
+\Delta ln M = \sqrt{ (\Delta  ln  M_{shape})^2 +
+(\sigma_{wl} )^2 }
+\end{equation}
+which combines the error due to the shape noise and the error due to
+scatter based on clusters not being spherical. From \citep{mbecker}
+we take
+\begin{equation}
+\sigma_{wl} = \frac{0.3}{\sqrt{N}}
+\end{equation}
+where N is the number of clusters in a given bin. To calculate the
+shape noise we use the equation
+\begin{equation}
+\Delta  ln  M_{shape} \approx 6.0*10^3
+(\frac{N}{4000})^{1/2}(\frac{\sigma_e}{0.3})(\frac{M}{2*10^{14}
+M_{\odot}})^{-2/3} (\frac{\overline{ngal}}{30 
+arcmin^{-2}})^{-1/2}(\frac{D_{ls}/D_{s}}{0.5})^{-1},
+\end{equation}
+from \citep{obscos} with $\sigma_e = 0.4$, $\overline{ngal} = 5.72$ 
+and $D_{ls}/D_{s} = 0.27$ which yields the statistical limits shown in 
+Table \ref{table:Eduardoerror}. To model the concentration we expect
+for clusters at this redshift we assign an initial concentration c
+\begin{equation}
+c= A*( m_{200}/(2.0*1.e12))^{B}*(1 + z_{\rm{cluster}})^{C}
+\end{equation}
+Where  $ A = 7.85 $ ,  $ B = -0.081 $ , $ C= -0.71 $ and $m_{200}$ is
+the mass within $r_{200}$ from \citep{oguri}.
+
+\begin{table*}
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}  
+          \hline
+          N & Z lens  & Z source & Dls/Ds & Mvir  & C  & M200m  &  C &  M200c & C & $\Delta ln M$ \\
+          449   & 0.16   & 0.58   & 0.69   & 1.08 $10^{14}$   & 5.12   & 1.21 $10^{14}$   & 5.98   & 0.898 $10^{14}$   & 4.0    & 0.044   \\
+          \hline 
+          228   & 0.16   & 0.58   & 0.69   & 1.86 $10^{14}$   & 4.91   & 2.07 $10^{14}$   & 5.73   & 1.53 $10^{14}$   & 3.82    & 0.046   \\
+          \hline 
+          54   & 0.16   & 0.58   & 0.69   & 3.60 $10^{14}$   & 4.66   & 4.05 $10^{14}$   & 5.46   & 2.96 $10^{14}$   & 3.62    & 0.068   \\
+          \hline 
+          5   & 0.17   & 0.58   & 0.69   & 7.51 $10^{14}$   & 4.35   & 8.45 $10^{14}$   & 5.08   & 6.15 $10^{14}$   & 3.39    & 0.173   \\
+          \hline 
+          1079   & 0.26   & 0.62   & 0.54   & 1.06 $10^{14}$   & 4.85   & 1.16 $10^{14}$   & 5.5   & 0.898 $10^{14}$   & 3.89    & 0.037   \\
+          \hline 
+          528   & 0.25   & 0.62   & 0.54   & 1.87 $10^{14}$   & 4.63   & 2.06 $10^{14}$   & 5.26   & 1.57 $10^{14}$   & 3.71    & 0.038   \\
+          \hline 
+          109   & 0.26   & 0.62   & 0.54   & 3.60 $10^{14}$   & 4.39   & 3.95 $10^{14}$   & 4.97   & 3.0 $10^{14}$   & 3.51    & 0.058   \\
+          \hline 
+          10   & 0.26   & 0.62   & 0.54   & 6.83 $10^{14}$   & 4.17   & 7.54 $10^{14}$   & 4.73   & 5.7 $10^{14}$   & 3.33    & 0.144   \\
+          \hline 
+          1744   & 0.35   & 0.66   & 0.42   & 1.05 $10^{14}$   & 4.60   & 1.13 $10^{14}$   & 5.09   & 0.902 $10^{14}$   & 3.77    & 0.040   \\
+          \hline 
+          775   & 0.35   & 0.66   & 0.42   & 1.83 $10^{14}$   & 4.40   & 1.98 $10^{14}$   & 4.86   & 1.57 $10^{14}$   & 3.6    & 0.042   \\
+          \hline 
+          120   & 0.35   & 0.66   & 0.42   & 3.64 $10^{14}$   & 4.17   & 3.94 $10^{14}$   & 4.62   & 3.1 $10^{14}$   & 3.41    & 0.071   \\
+          \hline 
+          13   & 0.36   & 0.66   & 0.42   & 7.30 $10^{14}$   & 3.92   & 7.92 $10^{14}$   & 4.34   & 6.19 $10^{14}$   & 3.2    & 0.147  \\ 
+          \hline 
+          2395   & 0.45   & 0.73   & 0.34   & 1.04 $10^{14}$   & 4.38   & 1.11 $10^{14}$   & 4.74   & 0.906 $10^{14}$   & 3.67    & 0.046   \\
+          \hline 
+          990   & 0.45   & 0.73   & 0.34   & 1.85 $10^{14}$   & 4.18   & 1.97 $10^{14}$   & 4.52   & 1.61 $10^{14}$   & 3.5    & 0.049   \\
+          \hline 
+          150   & 0.45   & 0.73   & 0.34   & 3.53 $10^{14}$   & 3.97   & 3.77 $10^{14}$   & 4.3   & 3.05 $10^{14}$   & 3.32    & 0.084  \\ 
+          \hline 
+          16   & 0.46   & 0.73   & 0.34   & 6.81 $10^{14}$   & 3.75   & 7.26 $10^{14}$   & 4.06   & 5.84 $10^{14}$   & 3.13    & 0.173   \\
+          \hline 
+          2753   & 0.55   & 0.79   & 0.26   & 1.02 $10^{14}$   & 4.19   & 1.071 $10^{14}$   & 4.44   & 0.899 $10^{14}$   & 3.56    & 0.065  \\ 
+          \hline 
+          985   & 0.55   & 0.79   & 0.26   & 1.84 $10^{14}$   & 4.00   & 1.93 $10^{14}$   & 4.25   & 1.62 $10^{14}$   & 3.4    & 0.073 \\  
+          \hline 
+          138   & 0.55   & 0.79   & 0.26   & 3.52 $10^{14}$   & 3.80   & 3.71 $10^{14}$   & 4.04   & 3.08 $10^{14}$   & 3.23    & 0.128   \\
+          \hline 
+          13   & 0.54   & 0.79   & 0.26   & 6.73 $10^{14}$   & 3.61   & 7.09 $10^{14}$   & 3.85   & 5.84 $10^{14}$   & 3.06    & 0.278  \\ 
+          \hline 
+          3053   & 0.65   & 0.87   & 0.21   & 1.01 $10^{14}$   & 4.01   & 1.05 $10^{14}$   & 4.19   & 0.89 $10^{14}$   & 3.46    & 0.091  \\ 
+          \hline 
+          915   & 0.65   & 0.87   & 0.21   & 1.82 $10^{14}$   & 3.82   & 1.89 $10^{14}$   & 4.0   & 1.61 $10^{14}$   & 3.3    & 0.112   \\
+          \hline 
+          121   & 0.65   & 0.87   & 0.21   & 3.52 $10^{14}$   & 3.63   & 3.66 $10^{14}$   & 3.8   & 3.11 $10^{14}$   & 3.13    & 0.200  \\ 
+          \hline 
+          8   & 0.65   & 0.87   & 0.21   & 6.97 $10^{14}$   & 3.43   & 7.25 $10^{14}$   & 3.6   & 6.13 $10^{14}$   & 2.96    & 0.499  \\ 
+          \hline 
+          2971   & 0.75   & 0.95   & 0.17   & 1.00 $10^{14}$   & 3.85   & 1.03 $10^{14}$   & 3.98   & 0.894 $10^{14}$   & 3.37    & 0.142   \\
+          \hline 
+          793   & 0.75   & 0.95   & 0.17   & 1.82 $10^{14}$   & 3.67   & 1.87 $10^{14}$   & 3.79   & 1.63 $10^{14}$   & 3.2    & 0.184   \\
+          \hline 
+          99   & 0.75   & 0.95   & 0.17   & 3.49 $10^{14}$   & 3.48   & 3.59 $10^{14}$   & 3.59   & 3.11 $10^{14}$   & 3.04    & 0.338   \\
+          \hline 
+          5   & 0.75   & 0.95   & 0.17   & 7.13 $10^{14}$   & 3.28   & 7.34 $10^{14}$   & 3.39   & 6.32 $10^{14}$   & 2.85    & 0.942   \\
+          \hline 
+
+          
+       \end{tabular}
+        \caption{ The statistical error or mass
+          uncertainty $\Delta ln(M)$ as described in Weinberg et
+          al. (2012), for each stacked weak lensing bin modeled for the DES survey.}
+    \label{table:state}
+\end{table*}
