@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mn2eCSTEP.aux
+The style file: mn2e.bst
+Database file #1: CSTEP_j.bib
+You've used 42 entries,
+            2938 wiz_defined-function locations,
+            854 strings with 21187 characters,
+and the built_in function-call counts, 44588 in all, are:
+= -- 2648
+> -- 6842
+< -- 5
++ -- 2105
+- -- 2072
+* -- 3743
+:= -- 8493
+add.period$ -- 0
+call.type$ -- 42
+change.case$ -- 851
+chr.to.int$ -- 41
+cite$ -- 42
+duplicate$ -- 734
+empty$ -- 1097
+format.name$ -- 2153
+if$ -- 8597
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 39
+newline$ -- 130
+num.names$ -- 170
+pop$ -- 829
+preamble$ -- 1
+purify$ -- 851
+quote$ -- 0
+skip$ -- 1222
+stack$ -- 0
+substring$ -- 841
+swap$ -- 70
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 378
+warning$ -- 0
+while$ -- 170
+width$ -- 0
+write$ -- 414
