@@ -1,32 +1,31 @@
 Lensing pipelines are not able to return 
 a shear measurement for all galaxies in an
 image. If a lensing pipelines preferentially rejects 
-objects then the assumption that the population of galaxies used to
-measure shear have $< \epsilon > = 0 $ may no longer be true. 
+objects based on their ellipticity and their orientation relative of the ellipticity of the PSF, then the assumption that the population of galaxies used to
+measure shear have $< \epsilon > = 0 $ is no longer true. 
 This selection bias effect has been discussed in STEP1 
 where it was determined that results for some lensing pipelines  
 improved when the non-zero mean intrinsic ellipticity of the surviving 
-objects was corrected for. \\
-\indent The fraction of successful shear measurements
- for each pipeline is shown for sources SNR $>$ 20 in Table \ref{table:sur_sel}.
+objects was corrected for.
+
+The fraction of successful shear measurements
+ for each pipeline is shown for sources with SNR $>$ 20 in Table \ref{table:sur_sel}.
 The pipelines with the highest efficiency of successful measurements
-are PK, DE and KM which are all moment based methods. 
+are PK, DE and KM, which are all moment based methods. 
 As implemented in this challege the GM method
 rejects a portion of the returned shear measurements and 
 uses a weighting system in determining the average shear. Before the
-flagged objects were rejected, the efficiency of GM was 0.93 and after
-the efficiency was 0.24. The efficency of GM reported here is
+flagged objects were rejected, the efficiency of GM was 0.93 before and 0.24 after rejection. These values are
 therefore not directly comparable to the other lensing pipelines. 
-\\
-\indent
+
 Pipelines may reject objects in a ellipticity dependent way. To test
-for this selection effect bias, the $\gamma$ measured is corrected for
+for this selection bias, the $\gamma$ measured is corrected for
 the intrinsic ellipticity of the sources as measured by each lensing
 pipeline. I3 and DE do not appear to have a selection bias as their
 accuracy is similar, before and after correction for $< \epsilon > \neq 0 $. The
 pipeline that is most affected by selection bias is PF. Q, M and C as measured for each
 lensing pipeline after correcting for selection effects is included in
-Table \ref{table:QMC_sel} and Table \ref{table:MC_sel} . 
+Table \ref{table:QMC_sel} and Table \ref{table:MC_sel}. \green{references to tables are orphaned here} 
 
 %%%%%%%%%% The refs above are still a problem
 
@@ -36,7 +35,7 @@ Table \ref{table:QMC_sel} and Table \ref{table:MC_sel} .
         \begin{tabular}{|c|c|c|c|c|c|c|c|}  
           \hline
           Pipeline  &  efficiency \\
-          \hline
+          \hline \hline
           DE &  0.92 \\
           \hline
           PF & 0.86 \\
@@ -54,7 +53,7 @@ Table \ref{table:QMC_sel} and Table \ref{table:MC_sel} .
           KM & 0.91 \\
           \hline
         \end{tabular}
-        \caption{The percentage survival of the shape measurement pipelines.}
+        \caption{Percentage of galaxies at SNR$>$20 for which the shape measurement pipelines return a successful measurement.}
     \label{table:sur_sel}
 \end{table}
 

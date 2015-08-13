@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{38}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Allen}, {Evrard} \& {Mantz}(2011){Allen}, {Evrard}, \&
@@ -21,13 +21,8 @@
 \bibitem[{{Bernstein}(2010)}]{Bern}
 {Bernstein} G.~M., 2010, \mnras, 406, 2793
 
-\bibitem[{{Bertin}(2011)}]{PSFex}
-{Bertin} E., 2011, in Astronomical Society of the Pacific Conference Series,
-  Vol. 442, Astronomical Data Analysis Software and Systems XX, {Evans} I.~N.,
-  {Accomazzi} A., {Mink} D.~J., {Rots} A.~H., eds., p. 435
-
-\bibitem[{{Bertin} \& {Arnouts}(1996)}]{Sext}
-{Bertin} E., {Arnouts} S., 1996, \aaps, 117, 393
+\bibitem[{{Bernstein} \& {Armstrong}(2014)}]{Bernstein2014}
+{Bernstein} G.~M., {Armstrong} R., 2014, \mnras, 438, 1880
 
 \bibitem[{{Bridle} {et~al}\mbox{.}(2010){Bridle}, {Balan}, {Bethge}, {Gentile},
   {Harmeling}, {Heymans}, {Hirsch}, {Hosseini}, {Jarvis}, {Kirk}, {Kitching},
@@ -43,33 +38,15 @@
   {Miller}, {Ogando}, {Romer}, {Rozo}, {Rykoff}, \& {Wechsler}}]{Joerg}
 {Dietrich} J.~P. {et~al.}, 2014, ArXiv e-prints
 
-\bibitem[{{Gillis} {et~al}\mbox{.}(2013){Gillis}, {Hudson}, {Erben}, {Heymans},
-  {Hildebrandt}, {Hoekstra}, {Kitching}, {Mellier}, {Miller}, {van Waerbeke},
-  {Bonnett}, {Coupon}, {Fu}, {Hilbert}, {Rowe}, {Schrabback}, {Semboloni}, {van
-  Uitert}, \& {Velander}}]{CH2}
-{Gillis} B.~R. {et~al.}, 2013, \mnras, 431, 1439
-
-\bibitem[{{Gruen} {et~al}\mbox{.}(2013{\natexlab{a}}){Gruen}, {Brimioulle},
-  {Seitz}, {Lee}, {Young}, {Koppenhoefer}, {Eichner}, {Riffeser}, {Vikram},
-  {Weidinger}, \& {Zenteno}}]{Gruen2}
-{Gruen} D. {et~al.}, 2013{\natexlab{a}}, \mnras, 432, 1455
-
 \bibitem[{{Gruen} {et~al}\mbox{.}(2014){Gruen}, {Seitz}, {Brimioulle},
   {Kosyra}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser}, {Eichner},
   {Weidinger}, \& {Bierschenk}}]{Gruen14}
 {Gruen} D. {et~al.}, 2014, \mnras, 442, 1507
 
-\bibitem[{{Gruen} {et~al}\mbox{.}(2013{\natexlab{b}}){Gruen}, {Seitz},
-  {Kosyra}, {Brimioulle}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser},
-  {Eichner}, {Weidinger}, \& {Bierschenk}}]{Gruen_s}
-{Gruen} D. {et~al.}, 2013{\natexlab{b}}, ArXiv e-prints
-
-\bibitem[{{Heymans} {et~al}\mbox{.}(2013){Heymans}, {Grocutt}, {Heavens},
-  {Kilbinger}, {Kitching}, {Simpson}, {Benjamin}, {Erben}, {Hildebrandt},
-  {Hoekstra}, {Mellier}, {Miller}, {Van Waerbeke}, {Brown}, {Coupon}, {Fu},
-  {Harnois-D{\'e}raps}, {Hudson}, {Kuijken}, {Rowe}, {Schrabback}, {Semboloni},
-  {Vafaei}, \& {Velander}}]{CH1}
-{Heymans} C. {et~al.}, 2013, \mnras, 432, 2433
+\bibitem[{{Gruen} {et~al}\mbox{.}(2013){Gruen}, {Seitz}, {Kosyra},
+  {Brimioulle}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser}, {Eichner},
+  {Weidinger}, \& {Bierschenk}}]{Gruen_s}
+{Gruen} D. {et~al.}, 2013, ArXiv e-prints
 
 \bibitem[{{Heymans} {et~al}\mbox{.}(2006){Heymans}, {Van Waerbeke}, {Bacon},
   {Berge}, {Bernstein}, {Bertin}, {Bridle}, {Brown}, {Clowe}, {Dahle}, {Erben},
@@ -104,19 +81,18 @@
 {Kacprzak} T., {Zuntz} J., {Rowe} B., {Bridle} S., {Refregier} A., {Amara} A.,
   {Voigt} L., {Hirsch} M., 2012, \mnras, 427, 2711
 
-\bibitem[{{Kilbinger} {et~al}\mbox{.}(2013){Kilbinger}, {Fu}, {Heymans},
-  {Simpson}, {Benjamin}, {Erben}, {Harnois-D{\'e}raps}, {Hoekstra},
-  {Hildebrandt}, {Kitching}, {Mellier}, {Miller}, {Van Waerbeke}, {Benabed},
-  {Bonnett}, {Coupon}, {Hudson}, {Kuijken}, {Rowe}, {Schrabback}, {Semboloni},
-  {Vafaei}, \& {Velander}}]{CH3}
-{Kilbinger} M. {et~al.}, 2013, \mnras, 430, 2200
-
 \bibitem[{{Kitching} {et~al}\mbox{.}(2012){Kitching}, {Balan}, {Bridle},
   {Cantale}, {Courbin}, {Eifler}, {Gentile}, {Gill}, {Harmeling}, {Heymans},
   {Hirsch}, {Honscheid}, {Kacprzak}, {Kirkby}, {Margala}, {Massey}, {Melchior},
   {Nurbaeva}, {Patton}, {Rhodes}, {Rowe}, {Taylor}, {Tewes}, {Viola},
   {Witherick}, {Voigt}, {Young}, \& {Zuntz}}]{GREAT10}
 {Kitching} T.~D. {et~al.}, 2012, \mnras, 423, 3163
+
+\bibitem[{{Kitching} {et~al}\mbox{.}(2013){Kitching}, {Rowe}, {Gill},
+  {Heymans}, {Massey}, {Witherick}, {Courbin}, {Georgatzis}, {Gentile},
+  {Gruen}, {Kilbinger}, {Li}, {Mariglis}, {Meylan}, {Storkey}, \&
+  {Xin}}]{GREAT10star}
+{Kitching} T.~D. {et~al.}, 2013, 205, 12
 
 \bibitem[{{Koester} {et~al}\mbox{.}(2007){Koester}, {McKay}, {Annis},
   {Wechsler}, {Evrard}, {Bleem}, {Becker}, {Johnston}, {Sheldon}, {Nichol},
