@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  13 AUG 2015 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.11)  14 AUG 2015 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,85 +391,89 @@ Underfull \hbox (badness 1831) in paragraph at lines 18--18
 t bias (M) of
  []
 
-)
-Underfull \hbox (badness 1303) in paragraph at lines 229--244
-\OT1/cmr/m/n/9 and bet-ter see-ing, the con-straints on cos-mol-ogy from
+) (./stat_sec_n.tex [6 <./fig/QMC_main_sel_f.pdf> <./fig/MC_main_sel_f.pdf> <./
+fig/Mvalred_mfix.pdf>]
+
+LaTeX Warning: Reference `table:NWF_1_b' on page 7 undefined on input line 32.
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 38--41
+\OT1/cmr/m/n/9 which com-bines the un-der-tainty due to shape noise
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--244
-
- []
-
-[6 <./fig/QMC_main_sel_f.pdf> <./fig/MC_main_sel_f.pdf> <./fig/Mvalred_mfix.pdf
->] (./stat_sec_n.tex
-
-LaTeX Warning: Reference `table:NWF_1_b' on page 7 undefined on input line 31.
-
-
-Overfull \hbox (17.80739pt too wide) detected at line 50
+Overfull \hbox (20.37682pt too wide) detected at line 49
 \OT1/cmr/m/n/9 ^^A[](M[]) = 6\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 0 \OMS/cmsy/m/n/9 
-^^C \OT1/cmr/m/n/9 10[] [][] [][] [][] [][]
+^^B \OT1/cmr/m/n/9 10[] [][] [][] [][] [][]
  []
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 54.
+(amsmath)                 on input line 53.
 
 <fig/Halo_N.pdf, id=350, 578.16pt x 433.62pt>
 File: fig/Halo_N.pdf Graphic file (type pdf)
  <use fig/Halo_N.pdf>
-Package pdftex.def Info: fig/Halo_N.pdf used on input line 61.
+Package pdftex.def Info: fig/Halo_N.pdf used on input line 60.
 (pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
 
-Overfull \hbox (37.20154pt too wide) in paragraph at lines 61--62
+Overfull \hbox (37.20154pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-) (./mse_sec_n.tex <fig/M_NFW_1.pdf, id=351, 867.24pt x 578.16pt>
-File: fig/M_NFW_1.pdf Graphic file (type pdf)
+) (./mse_sec_n.tex
+Underfull \hbox (badness 1077) in paragraph at lines 1--6
+\OT1/cmr/m/n/9 mea-sure-ment bias, a Navarro, Frenk, & White (1997)
+ []
 
-<use fig/M_NFW_1.pdf>
-Package pdftex.def Info: fig/M_NFW_1.pdf used on input line 32.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--6
+
+ []
+
+<fig/M_NFW_1.pdf, id=351, 867.24pt x 578.16pt>
+File: fig/M_NFW_1.pdf Graphic file (type pdf)
+ <use fig/M_NFW_1.pdf>
+Package pdftex.def Info: fig/M_NFW_1.pdf used on input line 38.
 (pdftex.def)             Requested size: 478.79846pt x 319.19759pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 279--284
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
 
  []
 
 [7 <./fig/Halo_N.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--291
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 292--300
+Underfull \hbox (badness 2435) in paragraph at lines 282--290
 []\OT1/cmr/m/n/9 The re-sults on the sim-u-la-tions showed that the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--300
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--305
+Underfull \hbox (badness 10000) in paragraph at lines 291--295
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./fig/M_NFW_1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 306--314
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--304
 
  []
 
 (./mn2eCSTEP.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./fig/M_NFW_1.pdf>]
 
 LaTeX Warning: Reference `@' on page 9 undefined on input line 6.
 
@@ -496,14 +500,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--25
  []
 
 
-Package natbib Warning: Citation `PSFex' on page 11 undefined on input line 27.
-
-
-
-Package natbib Warning: Citation `Gruen2' on page 11 undefined on input line 32
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 27--33
 
  []
@@ -513,29 +509,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--56
 
  []
 
-) (./stata_sec.tex <fig/M_NFW_2.pdf, id=460, 867.24pt x 578.16pt>
+) (./stata_sec.tex <fig/M_NFW_2.pdf, id=459, 867.24pt x 578.16pt>
 File: fig/M_NFW_2.pdf Graphic file (type pdf)
 
 <use fig/M_NFW_2.pdf>
 Package pdftex.def Info: fig/M_NFW_2.pdf used on input line 7.
 (pdftex.def)             Requested size: 277.20154pt x 184.80325pt.
- <fig/M_NFW_3.pdf, id=461, 867.24pt x 578.16pt>
+ <fig/M_NFW_3.pdf, id=460, 867.24pt x 578.16pt>
 File: fig/M_NFW_3.pdf Graphic file (type pdf)
 
 <use fig/M_NFW_3.pdf>
 Package pdftex.def Info: fig/M_NFW_3.pdf used on input line 8.
 (pdftex.def)             Requested size: 277.20154pt x 184.80325pt.
- <fig/M_NFW_4.pdf, id=462, 867.24pt x 578.16pt>
+ <fig/M_NFW_4.pdf, id=461, 867.24pt x 578.16pt>
 File: fig/M_NFW_4.pdf Graphic file (type pdf)
 
 <use fig/M_NFW_4.pdf>
 Package pdftex.def Info: fig/M_NFW_4.pdf used on input line 9.
 (pdftex.def)             Requested size: 277.20154pt x 184.80325pt.
- [11])
-
-Package natbib Warning: There were undefined citations.
-
-[12 <./fig/M_NFW_2.pdf> <./fig/M_NFW_3.pdf> <./fig/M_NFW_4.pdf>]
+ [11]) [12 <./fig/M_NFW_2.pdf> <./fig/M_NFW_3.pdf> <./fig/M_NFW_4.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
@@ -545,10 +537,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3573 strings out of 493109
- 49158 string characters out of 6135010
- 135919 words of memory out of 5000000
- 6932 multiletter control sequences out of 15000+600000
+ 3583 strings out of 493109
+ 49338 string characters out of 6135010
+ 136280 words of memory out of 5000000
+ 6942 multiletter control sequences out of 15000+600000
  18053 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,15n,34p,1680b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -564,20 +556,19 @@ r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on mn2eCSTEP.pdf (13 pages, 485011 bytes).
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on mn2eCSTEP.pdf (13 pages, 473733 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
+ 707 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

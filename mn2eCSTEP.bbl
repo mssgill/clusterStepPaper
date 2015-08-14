@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{42}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Allen}, {Evrard} \& {Mantz}(2011){Allen}, {Evrard}, \&
@@ -24,6 +24,11 @@
 \bibitem[{{Bernstein} \& {Armstrong}(2014)}]{Bernstein2014}
 {Bernstein} G.~M., {Armstrong} R., 2014, \mnras, 438, 1880
 
+\bibitem[{{Bertin}(2011)}]{PSFex}
+{Bertin} E., 2011, in Astronomical Society of the Pacific Conference Series,
+  Vol. 442, Astronomical Data Analysis Software and Systems XX, {Evans} I.~N.,
+  {Accomazzi} A., {Mink} D.~J., {Rots} A.~H., eds., p. 435
+
 \bibitem[{{Bridle} {et~al}\mbox{.}(2010){Bridle}, {Balan}, {Bethge}, {Gentile},
   {Harmeling}, {Heymans}, {Hirsch}, {Hosseini}, {Jarvis}, {Kirk}, {Kitching},
   {Kuijken}, {Lewis}, {Paulin-Henriksson}, {Sch{\"o}lkopf}, {Velander},
@@ -38,15 +43,25 @@
   {Miller}, {Ogando}, {Romer}, {Rozo}, {Rykoff}, \& {Wechsler}}]{Joerg}
 {Dietrich} J.~P. {et~al.}, 2014, ArXiv e-prints
 
+\bibitem[{{Gruen} {et~al}\mbox{.}(2013{\natexlab{a}}){Gruen}, {Brimioulle},
+  {Seitz}, {Lee}, {Young}, {Koppenhoefer}, {Eichner}, {Riffeser}, {Vikram},
+  {Weidinger}, \& {Zenteno}}]{Gruen2}
+{Gruen} D. {et~al.}, 2013{\natexlab{a}}, \mnras, 432, 1455
+
+\bibitem[{{Gruen} {et~al}\mbox{.}(2015){Gruen}, {Seitz}, {Becker}, {Friedrich},
+  \& {Mana}}]{ccv}
+{Gruen} D., {Seitz} S., {Becker} M.~R., {Friedrich} O., {Mana} A., 2015,
+  \mnras, 449, 4264
+
 \bibitem[{{Gruen} {et~al}\mbox{.}(2014){Gruen}, {Seitz}, {Brimioulle},
   {Kosyra}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser}, {Eichner},
   {Weidinger}, \& {Bierschenk}}]{Gruen14}
 {Gruen} D. {et~al.}, 2014, \mnras, 442, 1507
 
-\bibitem[{{Gruen} {et~al}\mbox{.}(2013){Gruen}, {Seitz}, {Kosyra},
-  {Brimioulle}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser}, {Eichner},
-  {Weidinger}, \& {Bierschenk}}]{Gruen_s}
-{Gruen} D. {et~al.}, 2013, ArXiv e-prints
+\bibitem[{{Gruen} {et~al}\mbox{.}(2013{\natexlab{b}}){Gruen}, {Seitz},
+  {Kosyra}, {Brimioulle}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser},
+  {Eichner}, {Weidinger}, \& {Bierschenk}}]{Gruen_s}
+{Gruen} D. {et~al.}, 2013{\natexlab{b}}, ArXiv e-prints
 
 \bibitem[{{Heymans} {et~al}\mbox{.}(2006){Heymans}, {Van Waerbeke}, {Bacon},
   {Berge}, {Bernstein}, {Bertin}, {Bridle}, {Brown}, {Clowe}, {Dahle}, {Erben},
@@ -147,6 +162,10 @@
 {Mohr} J.~J. {et~al.}, 2008, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series, Vol. 7016, Society of Photo-Optical
   Instrumentation Engineers (SPIE) Conference Series
+
+\bibitem[{{Navarro}, {Frenk} \& {White}(1997){Navarro}, {Frenk}, \&
+  {White}}]{1997ApJ...490..493N}
+{Navarro} J.~F., {Frenk} C.~S., {White} S.~D.~M., 1997, \apj, 490, 493
 
 \bibitem[{{Oguri} \& {Takada}(2011)}]{oguri}
 {Oguri} M., {Takada} M., 2011, \prd, 83, 023008

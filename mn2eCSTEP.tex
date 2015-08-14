@@ -232,42 +232,32 @@ parameters.  While weak lensing can provide individual mass
 measurements of high mass clusters, lower mass clusters can only be
 measured on average by stacked weak lensing. Stacked weak lensing
 measures the mean tangential shear of  background galaxies behind
-galaxy clusters which are binned by observable parameters such as
+galaxy clusters which are binned by an observable such as
 richness. Stacked weak lensing
 of clusters in the MaxBCG catalog \citep{Koester, Eshel} on data from the 
 Sloan Digital Sky Survey \citep{York} has been used to derive
 cosmological constraints on $\Omega_m$ and $\sigma_8$ in
-\citep{Ying, ERozo}. Since upcoming surveys such as DES  will include deeper
-imaging and better seeing, the constraints on cosmology
+\citep{Ying, ERozo}. Since ongoing and upcoming surveys such as DES  will provide deeper
+imaging and better seeing over a wide area, the constraints on cosmology
 from stacked cluster weak lensing will substantially improve if
-sources of systematic error can be controlled. \\
+sources of systematic error can be controlled.
 
 There are a number of systematic effects that can bias the
-stacked weak lensing mass measurement, and in this paper we focus
-on studying the systematic bias in the stacked weak lensing cluster
-mass measurement contributed by shape measurement errors. If lensing
+stacked weak lensing mass measurement, including issues with background sample selection and redshift estimation like a contamination by cluster members, mis-centering of clusters, deviations of the fitted shear profile from the truth \citep[e.g.][]{mbecker}, orientation bias \citep{Joerg}, or a lack of full treatment of the intrinsic variation in cluster profiles \citep{ccv}. In this paper we focus
+on the systematic bias in the stacked weak lensing cluster
+mass measurement contributed by shape measurement. If lensing
 pipelines provide a biased measurement of the shear profile of galaxy
-clusters this will bias the observed average cluster mass, and bias
+clusters, this will bias the observed average cluster mass, and bias
 the derived cluster abundance function. To model the possible
-impact on a DES like survey by shape measurement errors, we take an
-average NFW profile for each stacked cluster bin, apply a lensing
-bias, and then determine what cluster mass would be measured by
-an NFW fitting program. By comparing the true and the measured cluster
+impact on a DES-like survey, we take the
+average shear profile for each stacked cluster bin, apply a lensing
+bias, and then determine what cluster mass would be measured. 
+By comparing the true and the measured cluster
 mass this provides an estimate of the effect of shape measurement bias
 for each lensing pipeline. In this paper we compare the expected statistical errors
-expected in a DES like survey stacked weak lensing cluster mass measurement
+expected in a DES-like survey stacked weak lensing cluster mass measurement
 described in section \ref{sec:p1} to the modeled bias on the mass
-from shape measurement errors described in section \ref{sec:p2}. \\
-There are several other significant sources of systematic bias for
-stacked weak lensing not included in this study. As shown by
-\citep{Joerg} if optically detected clusters are binned by richness
-they have orientation bias and are not spherically symmetric, which
-leads to bias in the measured cluster abundance. Currently
-orientation bias will dominate over the statistical error for DES but
-it can perhaps be calibrated using simulations, or corrected using
-other methods. There are additional sources of possible systematic
-error such as photometric errors and cluster miscentering which are 
-areas of ongoing research and not discussed in this project.
+from shape measurement errors described in section \ref{sec:p2}.
 
 \subsection{Stacked cluster weak lensing: statistical errors}\label{sec:p1}
 \input{stat_sec_n}

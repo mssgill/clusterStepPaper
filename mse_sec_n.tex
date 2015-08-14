@@ -1,10 +1,11 @@
 Here we model the systematic errors on the stacked cluster weak
 lensing measurement by comparing the average mass in each bin
-to the mass measured by a shear profile, effected by shape 
-measurement bias. To measure the effect of shape measurement bias, a Navarro, Frenk and White
-(NFW) density profile is created for each mass bin. This density profile is
-used to calculate the reduced shear $ g $ from the theoretical
-predication as described in \cite{NFW}. \\
+to the mass measured by a shear profile, affected by shape 
+measurement bias. To measure the effect of shape measurement bias, a \citet*{1997ApJ...490..493N} (NFW) density profile is created for each mass bin. This density profile is
+used to calculate the tangential reduced shear $g$ as described in \cite{NFW}. \\
+
+\iffalse
+\green{I don't think we need this}
 \indent The NFW density profile is given by
 \begin{equation}
 \rho(r) = \frac{\delta_c\rho_c}{(r/r_s)(1+ r/r_s)^{2}}
@@ -21,17 +22,22 @@ halo is
 g = \frac{\gamma}{1-\kappa} = \frac{ \Delta \Sigma / \Sigma_c }{1
 -\overline{\Sigma}/ \Sigma_c}
 \end{equation}
-The reduced shear as measured by the current measurement pipelines is modeled as 
+\fi
+
+The reduced shear as measured including shape bias is modeled as 
 \begin{equation}
-g' = g^2*Q + g*M
+g' = (1+m)g + qg^2 \; .
 \end{equation}
 We then fit this $ g' $ distribution to get a $M_{200}$ and $ c $
-value. 
+value. \green{need more details here ... I guess sources uniformly distributed in area over some range in radius, maximum likelihood?}
+
+\green{interpretation of results; note that even if the systematic offset is within the statistical uncertainties in each bin, all bins combinedly being measured low is a different story... at least need to discuss that}
+
 \begin{figure*}
  \centering  % this centres figure in column
   \includegraphics[width=0.95\textwidth]{fig/M_NFW_1.pdf} 
   \caption{NFW mass and concentration measured on a reduced shear
-    profile effected by shape measurement bias
+    profile affected by shape measurement bias
    as measured on all images for galaxy objects with SNR $>$ 20.}
 \label{fig:M_NFW_1}
 \end{figure*}
@@ -57,6 +63,6 @@ value.
           \hline
         \end{tabular}
         \caption{ The expected statistical error due to one method of
-          cluster stacking for a DES like cluster distribution).}
+          cluster stacking for a DES-like cluster distribution).}
     \label{table:NFW_1_b}
 \end{table*}
