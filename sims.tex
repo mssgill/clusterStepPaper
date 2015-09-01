@@ -1,11 +1,8 @@
 \begin{figure}
  \centering  % this centres figure in column
   \includegraphics[width=0.45\textwidth]{fig/Out_hist_v2_truth.pdf} 
-  \caption{Distributions of various galaxy 
-properties in the CSTEP simulation. The top and bottom panel show the
-distributions of redshift and intrinsic ellipticity of galaxies. The
-total number of galaxy objects included is 141559 and is shown in blue, the number of
-galaxy obejects with SNR $>$ 20 is 84586 and is shown in magenta. \green{use larger labels; especially the x axis labels are hard to read}}
+  \caption{Distributions of redshift (top panel) and intrinsic ellipticity (bottom panel) in the CSTEP simulation.
+The full galaxy sample ($\approx140,000$) is shown in blue, the objects with SNR $>$ 20 ($\approx85,000$) is shown in magenta. \green{use larger labels; especially the x axis labels are hard to read; intrinsic size and Sersic index might be interesting to plot as well}}
 \label{fig:Galprop}
 \end{figure}
 
@@ -38,15 +35,19 @@ index that ranges from 0.5 to 5.
 
  The CSTEP simulated images contain a constant
 PSF, which eliminates the technical challenge of determining the best
-way to model a varying PSF \citep[cf.][for a simulation challenge for PSF reconstruction]{GREAT10star}. For CSTEP there are two
-branches in the image simulation sets, those that include a circular
-Gaussian PSF and those that include an elliptical Gaussian PSF. 
+way to model a varying PSF \citep[see][for a simulation challenge for PSF reconstruction]{GREAT10star}. For CSTEP there are two
+branches in the image simulation sets, one with a circular
+Gaussian PSF and one with an elliptical Gaussian PSF. 
 The elliptical Gaussian PSF has $ \epsilon =
 0.03 $. The simulated seeing FWHM of $ 0.7 - 0.9 $ arcsec matches the expected seeing in final DES data for different levels of atmospheric turbulence.
 A summary of the PSF image properties is shown in the upper part of Table \ref{table:tab2}. 
 For each PSF there are 8 focal plane images that contain constant
 shear for $\gamma = 0.0$ to $\gamma = 0.15$ in both
 $\gamma_1$ and $\gamma_2$, as described in the lower part of Table \ref{table:tab2}.  
+
+\green{you never discuss the additive bias later; I think one good way of thinking about it is a leakage of PSF ellipticity into the shear estimate. Is $c$ much different for the round and elliptical PSF data sets?}
+
+
 \begin{table}
 \centering
 \begin{centering}
