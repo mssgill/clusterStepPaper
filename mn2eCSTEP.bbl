@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{46}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Allen}, {Evrard} \& {Mantz}(2011){Allen}, {Evrard}, \&
@@ -12,6 +12,25 @@
 
 \bibitem[{{Becker} \& {Kravtsov}(2011)}]{mbecker}
 {Becker} M.~R., {Kravtsov} A.~V., 2011, \apj, 740, 25
+
+\bibitem[{{Becker} {et~al}\mbox{.}(2015){Becker}, {Troxel}, {MacCrann},
+  {Krause}, {Eifler}, {Friedrich}, {Nicola}, {Refregier}, {Amara}, {Bacon},
+  {Bernstein}, {Bonnett}, {Bridle}, {Busha}, {Chang}, {Dodelson}, {Erickson},
+  {Evrard}, {Frieman}, {Gaztanaga}, {Gruen}, {Hartley}, {Jain}, {Jarvis},
+  {Kacprzak}, {Kirk}, {Kravtsov}, {Leistedt}, {Rykoff}, {Sabiu}, {Sanchez},
+  {Seo}, {Sheldon}, {Wechsler}, {Zuntz}, {Abbott}, {Abdalla}, {Allam},
+  {Armstrong}, {Banerji}, {Bauer}, {Benoit-Levy}, {Bertin}, {Brooks},
+  {Buckley-Geer}, {Burke}, {Capozzi}, {Carnero Rosell}, {Carrasco Kind},
+  {Carretero}, {Castander}, {Crocce}, {Cunha}, {D'Andrea}, {da Costa}, {DePoy},
+  {Desai}, {Diehl}, {Dietrich}, {Doel}, {Fausti Neto}, {Fernandez}, {Finley},
+  {Flaugher}, {Fosalba}, {Gerdes}, {Gruendl}, {Gutierrez}, {Honscheid},
+  {James}, {Kuehn}, {Kuropatkin}, {Lahav}, {Li}, {Lima}, {Maia}, {March},
+  {Martini}, {Melchior}, {Miller}, {Miquel}, {Mohr}, {Nichol}, {Nord},
+  {Ogando}, {Plazas}, {Reil}, {Romer}, {Roodman}, {Sako}, {Sanchez},
+  {Scarpine}, {Schubnell}, {Sevilla-Noarbe}, {Smith}, {Soares-Santos},
+  {Sobreira}, {Suchyta}, {Swanson}, {Tarle}, {Thaler}, {Thomas}, {Vikram},
+  {Walker}, \& {The DES Collaboration}}]{becker}
+{Becker} M.~R. {et~al.}, 2015, ArXiv e-prints
 
 \bibitem[{{Berg{\'e}} {et~al}\mbox{.}(2008){Berg{\'e}}, {Pacaud},
   {R{\'e}fr{\'e}gier}, {Massey}, {Pierre}, {Amara}, {Birkinshaw},
@@ -38,6 +57,22 @@
   {Wittman}}]{GREAT08}
 {Bridle} S. {et~al.}, 2010, \mnras, 405, 2044
 
+\bibitem[{{Chang} {et~al}\mbox{.}(2015){Chang}, {Vikram}, {Jain}, {Bacon},
+  {Amara}, {Becker}, {Bernstein}, {Bonnett}, {Bridle}, {Brout}, {Busha},
+  {Frieman}, {Gaztanaga}, {Hartley}, {Jarvis}, {Kacprzak}, {Kov{\'a}cs},
+  {Lahav}, {Lin}, {Melchior}, {Peiris}, {Rozo}, {Rykoff}, {S{\'a}nchez},
+  {Sheldon}, {Troxel}, {Wechsler}, {Zuntz}, {Abbott}, {Abdalla}, {Allam},
+  {Annis}, {Bauer}, {Benoit-L{\'e}vy}, {Brooks}, {Buckley-Geer}, {Burke},
+  {Capozzi}, {Carnero Rosell}, {Carrasco Kind}, {Castander}, {Crocce},
+  {D'Andrea}, {Desai}, {Diehl}, {Dietrich}, {Doel}, {Eifler}, {Evrard}, {Fausti
+  Neto}, {Flaugher}, {Fosalba}, {Gruen}, {Gruendl}, {Gutierrez}, {Honscheid},
+  {James}, {Kent}, {Kuehn}, {Kuropatkin}, {Maia}, {March}, {Martini},
+  {Merritt}, {Miller}, {Miquel}, {Neilsen}, {Nichol}, {Ogando}, {Plazas},
+  {Romer}, {Roodman}, {Sako}, {Sanchez}, {Sevilla}, {Smith}, {Soares-Santos},
+  {Sobreira}, {Suchyta}, {Tarle}, {Thaler}, {Thomas}, {Tucker}, \&
+  {Walker}}]{chang}
+{Chang} C. {et~al.}, 2015, Physical Review Letters, 115, 051301
+
 \bibitem[{{Dietrich} {et~al}\mbox{.}(2014){Dietrich}, {Zhang}, {Song}, {Davis},
   {McKay}, {Baruah}, {Becker}, {Benoist}, {Busha}, {da Costa}, {Hao}, {Maia},
   {Miller}, {Ogando}, {Romer}, {Rozo}, {Rykoff}, \& {Wechsler}}]{Joerg}
@@ -48,15 +83,27 @@
   {Weidinger}, \& {Zenteno}}]{Gruen2}
 {Gruen} D. {et~al.}, 2013{\natexlab{a}}, \mnras, 432, 1455
 
-\bibitem[{{Gruen} {et~al}\mbox{.}(2015){Gruen}, {Seitz}, {Becker}, {Friedrich},
-  \& {Mana}}]{ccv}
-{Gruen} D., {Seitz} S., {Becker} M.~R., {Friedrich} O., {Mana} A., 2015,
-  \mnras, 449, 4264
+\bibitem[{{Gruen} {et~al}\mbox{.}(2015{\natexlab{a}}){Gruen}, {Friedrich},
+  {Amara}, {Bacon}, {Bonnett}, {Hartley}, {Jain}, {Jarvis}, {Kacprzak},
+  {Krause}, {Mana}, {Rozo}, {Rykoff}, {Seitz}, {Sheldon}, {Troxel}, {Vikram},
+  {Abbott}, {Abdalla}, {Allam}, {Armstrong}, {Banerji}, {Bauer}, {Becker},
+  {Benoit-Levy}, {Bernstein}, {Bernstein}, {Bertin}, {Bridle}, {Brooks},
+  {Buckley-Geer}, {Burke}, {Capozzi}, {Carnero Rosell}, {Carrasco Kind},
+  {Carretero}, {Crocce}, {Cunha}, {D'Andrea}, {da Costa}, {DePoy}, {Desai},
+  {Diehl}, {Dietrich}, {Doel}, {Eifler}, {Fausti Neto}, {Fernandez},
+  {Flaugher}, {Fosalba}, {Frieman}, {Gerdes}, {Gruendl}, {Gutierrez},
+  {Honscheid}, {James}, {Kuehn}, {Kuropatkin}, {Lahav}, {Li}, {Lima}, {Maia},
+  {March}, {Martini}, {Melchior}, {Miller}, {Miquel}, {Mohr}, {Nord}, {Ogando},
+  {Plazas}, {Reil}, {Romer}, {Roodman}, {Sako}, {Sanchez}, {Scarpine},
+  {Schubnell}, {Sevilla-Noarbe}, {Smith}, {Soares-Santos}, {Sobreira},
+  {Suchyta}, {Swanson}, {Tarle}, {Thaler}, {Thomas}, {Walker}, {Wechsler},
+  {Weller}, {Zhang}, \& {Zuntz}}]{troughs}
+{Gruen} D. {et~al.}, 2015{\natexlab{a}}, ArXiv e-prints
 
-\bibitem[{{Gruen} {et~al}\mbox{.}(2014){Gruen}, {Seitz}, {Brimioulle},
-  {Kosyra}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser}, {Eichner},
-  {Weidinger}, \& {Bierschenk}}]{Gruen14}
-{Gruen} D. {et~al.}, 2014, \mnras, 442, 1507
+\bibitem[{{Gruen} {et~al}\mbox{.}(2015{\natexlab{b}}){Gruen}, {Seitz},
+  {Becker}, {Friedrich}, \& {Mana}}]{ccv}
+{Gruen} D., {Seitz} S., {Becker} M.~R., {Friedrich} O., {Mana} A.,
+  2015{\natexlab{b}}, \mnras, 449, 4264
 
 \bibitem[{{Gruen} {et~al}\mbox{.}(2013{\natexlab{b}}){Gruen}, {Seitz},
   {Kosyra}, {Brimioulle}, {Koppenhoefer}, {Lee}, {Bender}, {Riffeser},
@@ -85,6 +132,23 @@
 
 \bibitem[{{Honscheid} \& {DePoy}(2008)}]{Klaus}
 {Honscheid} K., {DePoy} D.~L., 2008, ArXiv e-prints
+
+\bibitem[{{Jarvis} {et~al}\mbox{.}(2015){Jarvis}, {Sheldon}, {Zuntz},
+  {Kacprzak}, {Bridle}, {Amara}, {Armstrong}, {Becker}, {Bernstein}, {Bonnett},
+  {Chang}, {Das}, {Dietrich}, {Drlica-Wagner}, {Eifler}, {Gangkofner}, {Gruen},
+  {Hirsch}, {Huff}, {Jain}, {Kent}, {Kirk}, {MacCrann}, {Melchior}, {Plazas},
+  {Refregier}, {Rowe}, {Rykoff}, {Samuroff}, {S{\'a}nchez}, {Suchyta},
+  {Troxel}, {Vikram}, {Abbott}, {Abdalla}, {Allam}, {Annis}, {Benoit-L{\'e}vy},
+  {Bertin}, {Brooks}, {Buckley-Geer}, {Burke}, {Capozzi}, {Carnero Rosell},
+  {Carrasco Kind}, {Carretero}, {Castander}, {Crocce}, {Cunha}, {D'Andrea}, {da
+  Costa}, {DePoy}, {Desai}, {Diehl}, {Doel}, {Fausti Neto}, {Flaugher},
+  {Fosalba}, {Frieman}, {Gaztanaga}, {Gerdes}, {Gruendl}, {Gutierrez},
+  {Honscheid}, {James}, {Kuehn}, {Kuropatkin}, {Lahav}, {Li}, {Lima}, {March},
+  {Martini}, {Miquel}, {Mohr}, {Neilsen}, {Nord}, {Ogando}, {Reil}, {Romer},
+  {Roodman}, {Sako}, {Sanchez}, {Scarpine}, {Schubnell}, {Sevilla-Noarbe},
+  {Smith}, {Soares-Santos}, {Sobreira}, {Swanson}, {Tarle}, {Thaler}, {Thomas},
+  {Walker}, \& {Wechsler}}]{jarvis}
+{Jarvis} M. {et~al.}, 2015, ArXiv e-prints
 
 \bibitem[{{Kacprzak} {et~al}\mbox{.}(2013){Kacprzak}, {Bridle}, {Rowe},
   {Voigt}, {Zuntz}, {Hirsch}, \& {MacCrann}}]{K_2}
@@ -194,6 +258,23 @@
   {Koester}, {McKay}, {Oyaizu}, {Cunha}, {Lima}, {Lin}, {Frieman}, {Wechsler},
   {Annis}, {Mandelbaum}, {Bahcall}, \& {Fukugita}}]{Eshel}
 {Sheldon} E.~S. {et~al.}, 2009, \apj, 703, 2217
+
+\bibitem[{{Vikram} {et~al}\mbox{.}(2015){Vikram}, {Chang}, {Jain}, {Bacon},
+  {Amara}, {Becker}, {Bernstein}, {Bonnett}, {Bridle}, {Brout}, {Busha},
+  {Frieman}, {Gaztanaga}, {Hartley}, {Jarvis}, {Kacprzak}, {Kov{\'a}cs},
+  {Lahav}, {Leistedt}, {Lin}, {Melchior}, {Peiris}, {Rozo}, {Rykoff},
+  {S{\'a}nchez}, {Sheldon}, {Troxel}, {Wechsler}, {Zuntz}, {Abbott}, {Abdalla},
+  {Armstrong}, {Banerji}, {Bauer}, {Benoit-L{\'e}vy}, {Bertin}, {Brooks},
+  {Buckley-Geer}, {Burke}, {Capozzi}, {Carnero Rosell}, {Carrasco Kind},
+  {Castander}, {Crocce}, {Cunha}, {D'Andrea}, {da Costa}, {DePoy}, {Desai},
+  {Diehl}, {Dietrich}, {Estrada}, {Evrard}, {Fausti Neto}, {Fernandez},
+  {Flaugher}, {Fosalba}, {Gerdes}, {Gruen}, {Gruendl}, {Honscheid}, {James},
+  {Kent}, {Kuehn}, {Kuropatkin}, {Li}, {Maia}, {Makler}, {March}, {Marshall},
+  {Martini}, {Merritt}, {Miller}, {Miquel}, {Neilsen}, {Nichol}, {Nord},
+  {Ogando}, {Plazas}, {Romer}, {Roodman}, {Sanchez}, {Scarpine}, {Sevilla},
+  {Smith}, {Soares-Santos}, {Sobreira}, {Suchyta}, {Swanson}, {Tarle},
+  {Thaler}, {Thomas}, {Walker}, \& {Weller}}]{vikram}
+{Vikram} V. {et~al.}, 2015, \prd, 92, 022006
 
 \bibitem[{{von der Linden} {et~al}\mbox{.}(2014){von der Linden}, {Mantz},
   {Allen}, {Applegate}, {Kelly}, {Morris}, {Wright}, {Allen}, {Burchat},
