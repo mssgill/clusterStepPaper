@@ -16,16 +16,17 @@
 %\documentclass[useAMS,usenatbib]{mn2e}
 \documentclass[useAMS,usenatbib]{mn2e}
 %\usepackage{Times}
-\usepackage{graphicx}
+\usepackage{graphicx,color}
 \usepackage{mathtools}
 
 %\renewcommand{\baselinestretch}{1.8}
 %%%%% AUTHORS - PLACE YOUR OWN MACROS HERE %%%%%
 
+\newcommand{\green}[1]{\textcolor{green}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Cluster Shear TEsting Program]{Cluster STEP}
+\title[Cluster Shear TEsting Program]{The Cluster Shear TEsting Program: \green{a catchy subtitle here}}
 \author[J. Young et al. ]{J. Young$^{1}$\thanks{E-mail:
 email@address (AVR); otheremail@otheraddress (ANO)} and 
 Other.\\
@@ -43,18 +44,18 @@ $^{1}$OSU/USM \\
 
 \begin{abstract}
 We present results from the Cluster Shear TEsting Program (CSTEP), an image
-analysis challenge to measure weak gravitational shear in
+analysis challenge focused on weak gravitational shear in
 the cluster regime. Shape measurement bias is an important source of systematic error in the 
 measurement of cluster masses by weak gravitational lensing and,
-consequently cluster cosmology. In this work the accuracy of the shape measurement pipelines is determined from image simulations
-that have realistic distributions of galaxy properties and large gravitational shear. Eight different shape measurement pipelines were tested, and the best
+consequently, cluster cosmology. In this work the accuracy of eight shape measurement pipelines is determined from image simulations
+that have realistic distributions of galaxy properties and large gravitational shear. The best
 performing methods exhibit a multiplicative bias of a few percent that
-is stable as a function of redshift. Our results also show that the
-methods tested here do not have a strong quadratic bias. We also find
-that the amount that the shear bias measured was due to selection effects varied widely
+is stable as a function of redshift. Our results show that the
+methods tested here do not have a strong quadratic bias. We find
+that the shear bias due to selection effects varies widely
 among the methods. We model the impact of the
-biases found on a simulated stage III optical weak lensing cluster cosmology survey, such as the Dark Energy Survey (DES) and find it to
-be below the statistical uncertainty which can be further reduced by simulation based calibration.
+biases found on a simulated stage III optical weak lensing cluster cosmology survey, such as the Dark Energy Survey (DES), and find it to
+be below the statistical uncertainty in a realistic, binned cluster sample. Current shape measurement methods are therefore suitable for upcoming cluster lensing data sets, particularly when tested and calibrated by realistic image simulations.
 \end{abstract}
 
 \begin{keywords}
@@ -64,62 +65,56 @@ gravitational lensing: weak, techniques:image processing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sec 1
 \section{Introduction}
-A primary cosmological probe is the number and distribution in mass of galaxy
-clusters in a given volume of space \citep{Allen}. There are a number
-of different tools to detect clusters including X-ray and SZ but these
-methods provide observables which must then be correlated with mass by
-weak lensing. Large optical surveys such as the Dark Energy Survey (DES)
-(http://www.darkenergysurvey.org/) are able to detect and measure the
+The number density and distribution in mass and redshift of galaxy
+clusters is a versatile cosmological probe \citep[cf.][for a recent review]{Allen}. There are a number
+of different ways of detecting clusters, including the presence of red cluster member galaxies or the X-ray and SZ signal of hot intra-cluster gas.
+All of these methods provide observables which, however, must be connected to cluster mass before they can be used for cosmology. One method of achieving this is 
+weak lensing. Large optical surveys such as the Dark Energy Survey (DES, http://www.darkenergysurvey.org/) are able to detect and measure the
 mass of large numbers of clusters and place strong constraints on the
-halo mass function if sources of systematic error in shear measurement can be controlled.
-Shape measurement pipelines have been developed to remove the 
-effect of the PSF and accurately measure the lensing signal. As the
-mass measured from a galaxy cluster depends on the strength of the
+halo mass function if sources of systematic error can be controlled.
+Shape measurement pipelines have been developed to accurately measure the lensing signal, yet are known
+to suffer from small systematic shape measurement errors (biases). As the mass estimated for a galaxy cluster depends on the strength of the
 shear measured on galaxies behind the cluster, a biased weak lensing
 pipeline will lead to a biased determination of the cluster mass.
  
-\indent Previous image simulation challenges were used to determine
-the accuracy of shape measurement pipelines, STEP1 \citep{STEP1},
+Previous image simulation challenges were used to determine
+the accuracy of shape measurement pipelines, e.g.~STEP1 \citep{STEP1},
 STEP2 \citep{STEP2}, GREAT08 \citep{GREAT08}, GREAT10
-\citep{GREAT10}, and GREAT3 \citep{great3}, and used blinded image
-simulations to characterize the shape measurement bias created by
-different lensing pipelines. All of these challenges have focused on
+\citep{GREAT10}, and GREAT3 \citep{great3}. These challenges used blinded image
+simulations to characterize the shape measurement bias in
+ lensing pipelines. All of these challenges have focused on
 different aspects of shear estimation, and have led to
-improvements in existing shear pipelines. These simulation challenges provide a way to
-more directly compare the accuracy of shear measurement pipelines against each other
-on simulated data with different galaxy morphology, seeing and Signal
-to Noise ratio (SNR). Results from these challenges have been
+improvements in existing shear pipelines. The results have been
 used to calibrate shape measurement pipelines \citep[e.g.][]{Apple},
 and determine that lensing pipelines meet accuracy requirements for scientific
 analyses \citep[e.g.][]{Berge}. Although previous challenges provided valuable information on many important
-aspects of shear pipeline estimation, they were designed to test the ability of shear
-pipelines to measure cosmic shear with $|g_{true}| \leq 0.06
-$. It is important, however, to also test the accuracy of shape measurement
+aspects of shear pipeline estimation, they were designed to test the regime of very weak cosmic shear with $|g| \leq 0.06$. 
+It is important, however, to also test the accuracy of shape measurement
 pipelines in the higher shear regime that occurs around the center of
-massive galaxy clusters where selection effects and non-linear bias
+massive galaxy clusters, where selection effects and non-linear biases
 may play a more important role.
 
-\indent
+
 The Cluster Shear TEsting Program (CSTEP) is designed to extend image
 simulation challenges to the high shear regime and study aspects of
 shear estimation that would impact a weak lensing measurement of
 cluster mass for a ground based large optical survey. For this, we
 simulate ground-based images of galaxies with a realistic
-distribution of SNR, size and ellipticity. Lensing pipelines
+distribution of signal-to-noise ratio (SNR), size and ellipticity. Lensing pipelines
 were evaluated to determine their shape measurement bias as a
 function of these properties. The shape measurement bias as 
 determined for each lensing pipeline is then used to model the 
-systematic error in the cluster mass for a stacked weak lensing measurement.
+systematic error in the cluster mass for a stacked weak lensing measurement and its impact on cluster cosmology.
 
-\indent
+
 In Section 2 we describe the structure of the challenge and the image simulations used in this
 project. We outline the characteristics of the shape
 measurement pipelines used in this analysis in Section 3. We present
-our findings on shape measurement bias including the impact of S/N, selection
+our findings on shape measurement bias including the impact of SNR, selection
 effects, quadratic bias and redshift in Section 4. The
 effect of shape measurement biases on stacked cluster weak lensing
 analyses is discussed in Section 5.  Conclusions from this study are 
-given in Section 6.  Finally there is an appendix which contains some further
+given in Section 6.  Finally there is an appendix which contains a more detailed
 description of pipelines. 
 
 
@@ -127,53 +122,49 @@ description of pipelines.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sec 2
 \section{Cluster STEP Challenge}
 Gravitational lensing is the distortion of the images of
-distant galaxies by the gravitational pull of massive structures near
+distant galaxies by the tidal gravitational field of massive structures near
 their line of sight. This can
 cause a change in the observed shape, size, and brightness of a
-galaxy. For massive galaxy clusters this leads to galaxies at a
+galaxy. \green{unclutter following sentence:} For massive galaxy clusters this leads to galaxies at a
 higher redshift than the cluster often being
-observed as arcs ( strong lensing ) near the cluster center , and to
+observed as arcs (strong lensing) near the cluster center , and to
 appear aligned tangentialy with decreasing amount of distortion further from
-the cluster center ( weak lensing ). Since galaxies are assumed to
+the cluster center (weak lensing). Since physically unrelated galaxies 
 have random orientations, a measurement of the average ellipticity of
-a group of galaxies unaffected by gravitational lensing would average
-to zero. Measuring the degree in which the observed galaxies appear aligned so
-the ensemble average ellipticity diverges from zero provides a way to 
-measure the strength of the gravitational lensing signal, and thus the
-mass of the galaxy cluster. 
+an ensemble of galaxies unaffected by gravitational lensing would average
+to zero. Measuring the mean tangential alignment of background galaxies therefore provides a way of
+measuring the strength of the gravitational lensing signal, and thus the
+mass of a galaxy cluster. 
 
-\indent For the
-larger shears of the cluster regime both the quadratic ($q$) and
-multiplicative ($m$) shape measurement bias (see eq.~\ref{Eqn:QMC})
-affect the bias in lensing signal to a greater extent than any
-constant ($c$) shear bias, since the later averages when measuring
-tangential shear over a full circle. It is
+For the larger shears of the cluster regime and analyses assuming radial symmetry, multiplicative ($m$) and
+quadratic ($q$) shape bias (see eq.~\ref{Eqn:QMC})
+affect the measurement to a greater extent than a
+constant ($c$) shear bias, since the latter averages to zero when measuring
+tangential shear over a full circle. It is therefore most
 important to quantify the quadratic and multiplicative bias on images
 with simulated shear comparable to the shear observed around large
 galaxy clusters. The Cluster Shear TEsting Program (CSTEP) tested eight weak lensing pipelines on images of constant shear
-($|\gamma| = [0.03, 0.06, 0.09, 0.15]$ ) with galaxy and PSF properties that simulate the properties
-of data that will be observed with DES. Systematic shape measurement bias was quantified by the $q$, $m$ and $c$
+($|\gamma| = [0.03, 0.06, 0.09, 0.15]$) with galaxy and PSF properties that simulate the properties
+of data that is being observed with DES. Systematic shape measurement bias was quantified by the $q$, $m$ and $c$
 determined by a fit of the quadratic equation.
 \begin{equation}\label{Eqn:QMC}
 \gamma_m = q (\gamma_t)^2 + (1+m) \gamma_t + c,
 \end {equation}
 where $\gamma_t$ is the true shear and $\gamma_m$ is the measured
-shear. A simpler model that has been used to quantify error
-for cosmic shear regimes was also used.
+shear. A linear model that has been used to quantify systematic errors
+for cosmic shear regimes was also used, defining the biases as \citep{STEP1}
 \begin{equation}\label{Eqn:MC}
-\gamma_m = (1+m) \gamma_t + c,
+\gamma_m = (1+m) \gamma_t + c \; .
 \end {equation}
 
-An example fit to the im3shape data is shown in Figure
-\ref{fig:eqfit}. \\
+An example fit to the im3shape data is shown in Figure~\ref{fig:eqfit}.
 
 \begin{figure}
  \centering  % this centres figure in column
   \includegraphics[width=0.45\textwidth]{fig/fitplt.pdf} 
   \caption{An example of the two types of fit used to quantify shape
     measurement error for the shear as measured by the im3shape
-    pipeline (I3) on galaxy objects with Signal
-    to Noise Ratio greater than 50. }
+    pipeline (I3) on galaxies with SNR greater than 50. \green{show an example with more significant difference between the two fits; use larger labels} }
 \label{fig:eqfit}
 \end{figure}
 
@@ -203,22 +194,31 @@ the best shear measurement pipeline to use may depend both on the
 data being evaluated and the lensing application. A more detailed examination
 of the performance of each individual lensing pipeline 
 as a function of PSF ellipticity, PSF size, galaxy size, 
-and selection bias is included in Appendix \ref{App:shpipe}, along
+and the contribution of selection bias is included in Appendix \ref{App:shpipe}, along
 with a description of the algorithms of the shape measurement pipelines. \\
 
-\subsection{Galaxy signal to noise ratio}\label{sec:SNR}
-\input{snr_sec}
+The measure of signal-to-noise ratio (SNR) referred to in this section was measured on the CSTEP images
+for each galaxy using \textsc{SExtractor}. It is defined as 
+\begin{equation}\label{Eqn:SNR_ref}
+\textrm{SNR} = \frac{\textrm{Flux}}{\textrm{Flux Error}} \; ,
+\end{equation}
+where the flux and flux error was determined using ... \green{say FLUX\_AUTO or FLUX\_ISO here and give details on detection threshold in case it's the latter; I don't think the figure adds much since the MJ and I3 definitions of SNR are less common than this one, so I've removed it}.
 
-\subsection{Average results on galaxies SNR $>$ 20}
+\green{can you comment here or elsewhere on how you get the error bars on q,m,c? you should probably also mention how you fit for q,m,c (subtracting the mean intrinsic ellipticity of all galaxies as far as I remember, rather than doing a ring-test type thing)}
+
+\subsection{Mean shape measurement bias}
 \input{avgres}
 
-\subsection{Amount of quadratic shear bias}
+\subsection{Quadratic shear bias}
 \input{quadratic_bias}
 
-\subsection{Selection effects and pipeline efficiency }
+\subsection{Dependence on galaxy signal-to-noise ratio}\label{sec:SNR}
+\input{snr_sec}
+
+\subsection{Selection effects and pipeline efficiency}
 \input{seleff}
 
-\subsection{Shape measurement bias as a function of Redshift}
+\subsection{Shape measurement bias as a function of redshift}
 \input{smb_sec}
 
 
@@ -229,42 +229,32 @@ parameters.  While weak lensing can provide individual mass
 measurements of high mass clusters, lower mass clusters can only be
 measured on average by stacked weak lensing. Stacked weak lensing
 measures the mean tangential shear of  background galaxies behind
-galaxy clusters which are binned by observable parameters such as
+galaxy clusters which are binned by an observable such as
 richness. Stacked weak lensing
 of clusters in the MaxBCG catalog \citep{Koester, Eshel} on data from the 
 Sloan Digital Sky Survey \citep{York} has been used to derive
 cosmological constraints on $\Omega_m$ and $\sigma_8$ in
-\citep{Ying, ERozo}. Since upcoming surveys such as DES  will include deeper
-imaging and better seeing, the constraints on cosmology
+\citep{Ying, ERozo}. Since ongoing and upcoming surveys such as DES  will provide deeper
+imaging and better seeing over a wide area, the constraints on cosmology
 from stacked cluster weak lensing will substantially improve if
-sources of systematic error can be controlled. \\
+sources of systematic error can be controlled.
 
-\indent There are a number of systematic effects that can bias the
-stacked weak lensing mass measurement, and in this paper we focus
-on studying the systematic bias in the stacked weak lensing cluster
-mass measurement contributed by shape measurement errors. If lensing
+There are a number of systematic effects that can bias the
+stacked weak lensing mass measurement, including issues with background sample selection and redshift estimation like a contamination by cluster members, mis-centering of clusters, deviations of the fitted shear profile from the truth \citep[e.g.][]{mbecker}, orientation bias \citep{Joerg}, or a lack of full treatment of the intrinsic variation in cluster profiles \citep{ccv}. In this paper we focus
+on the systematic bias in the stacked weak lensing cluster
+mass measurement contributed by shape measurement. If lensing
 pipelines provide a biased measurement of the shear profile of galaxy
-clusters this will bias the observed average cluster mass, and bias
+clusters, this will bias the observed average cluster mass, and bias
 the derived cluster abundance function. To model the possible
-impact on a DES like survey by shape measurement errors, we take an
-average NFW profile for each stacked cluster bin, apply a lensing
-bias, and then determine what cluster mass would be measured by
-an NFW fitting program. By comparing the true and the measured cluster
+impact on a DES-like survey, we take the
+average shear profile for each stacked cluster bin, apply a lensing
+bias, and then determine what cluster mass would be measured. 
+By comparing the true and the measured cluster
 mass this provides an estimate of the effect of shape measurement bias
 for each lensing pipeline. In this paper we compare the expected statistical errors
-expected in a DES like survey stacked weak lensing cluster mass measurement
+expected in a DES-like survey stacked weak lensing cluster mass measurement
 described in section \ref{sec:p1} to the modeled bias on the mass
-from shape measurement errors described in section \ref{sec:p2}. \\
-\indent There are several other significant sources of systematic bias for
-stacked weak lensing not included in this study. As shown by
-\citep{Joerg} if optically detected clusters are binned by richness
-they have orientation bias and are not spherically symmetric, which
-leads to bias in the measured cluster abundance. Currently
-orientation bias will dominate over the statistical error for DES but
-it can perhaps be calibrated using simulations, or corrected using
-other methods. There are additional sources of possible systematic
-error such as photometric errors and cluster miscentering which are 
-areas of ongoing research and not discussed in this project.
+from shape measurement errors described in section \ref{sec:p2}.
 
 \subsection{Stacked cluster weak lensing: statistical errors}\label{sec:p1}
 \input{stat_sec_n}
@@ -274,45 +264,19 @@ areas of ongoing research and not discussed in this project.
 
 \section{Summary}
 The CSTEP project tested shape measurement pipelines in the cluster
-shear regime on simulated data of DES. This project
-analyzed the effectiveness of the shear pipelines by several criteria,
-and tested the impact shape measurement bias would have on a stacked
-cluster weak lensing analysis. \\
+shear regime on realistic image simulations, comparable to the data collected by DES. 
+We used these to analyzed the effectiveness and systematic errors of shear pipelines by several criteria,
+and tested the impact shape measurement bias has on a stacked cluster weak lensing analysis. \\
 
-\indent In this paper we measured Quadratic, Multiplicative and
-Additive bias of galaxy shape estimates for eight shape measurement
-pipelines. The shape measurement bias found in several of the pipelines was within the
-desired limits of a stacked cluster weak lensing measurement for
-DES. In particular the I3 pipeline has consistently good bias properties
-across a wide range of simulation input parameters.\\
+The results of these analyses for the eight shape measurement pipelines tested are as follows:
+\begin{itemize}
+\item Multiplicative biases at the level of a few per-cent are common among the pipelines tested. These translate to relative systematic errors in cluster mass of the same order. For the most accurate pipelines participating in CSTEP, the statistical uncertainties of stacked weak lensing cluster masses in a realistic binning are larger than these systematic effects for a DES-like survey. The combined effect on the calibration of cluster mass-observable relation may, however, still be significant. We note that calibration of shape measurement biases from dedicated simulations (cf., e.g., \citealt{jarvis}, their Section~7.3.2) can reduce such biases considerably. Uncertainty in the multiplicative bias calibration should, however, still be included in analyses that use weak lensing constraints on cluster masses. 
+\item We find that selection effects, i.e.~the dependence of the success rate of shape measurement on the true shape of galaxies, play a significant role for multiplicative biases. Depending on the methodology of calibration (e.g.~with ring tests), this effect has not always been accounted for in the past. The selection of galaxies should be made as independent of shear as possible (e.g. with \emph{roundified} measures of signal-to-noise ratio or size, cf.~\citealt{jarvis}).
+\item On a similar note, we find a sometimes strong dependence of shear bias on signal-to-noise ratio. This suggests that a bias correction that takes signal-to-noise ratio into account, rather than a global calibration factor, is a promising calibration scheme. \green{got that from your previous summary, but can't really see it from what is in the paper:} The effect of other galaxy properties, such as morphology, is less drastic.
+\item Quadratic biases, despite the larger distortions seen in the cluster regime, are subdominant in their effect on recovered shears and cluster masses, for most of the pipelines tested. We also do not find a strong dependence of mean biases on source redshift, which is particularly reassuring for the calibration of mass-observable relations.
+\end{itemize}
 
-\indent The results on the simulations showed that the strongest
-determination of high bias was a low Signal to Noise Ratio (SNR). A
-low signal to noise ratio occurs when the differentiation between
-galaxy boundaries and their background is poor. In contrast, galaxies 
-simulated at different redshifts had the same level of bias. An
-important finding is based on an analysis of bias as a function of galaxy model
-type. For many of the pipelines, and I3 in particular, galaxy
-model type has little impact on measures of pipeline bias. \\
-
-\indent The results showed that in general the Quadratic bias was not
-significant for most pipelines and that it did not contribute
-significantly to the error in the mass measured on stacked cluster
-weak lensing profiles. \\
-
-\indent This project has helped determine the properties of pipelines
-to be used in DES. The use of the I3 pipeline
-finds support by the consistently high quality of the shape
-estimates. In addition, the characteristics of bias have been further
-clarified, leaving in general bias as a multiplicative function
-dominated by Signal to Noise ratio - leading to support of future
-multiplicative corrections for Signal to Noise ratio in future
-analysis. \\
-
- 
-
- 
-
+This project has served as an early test of prospective shape measurement pipelines for applications in DES. The I3 and GM methods have, in updated form, been applied to DES Science Verification data \citep{jarvis} and have been shown to meet the requirements of several scientific weak lensing applications of this first DES data set \citep[cf.][]{vikram,chang,becker,troughs}. Despite recent advances in shape measurement techniques, larger future data sets will continue to require careful calibration and simulation-based testing of shear biases to make use of their full statistical potential.
 
 \section*{Acknowledgments}
 I thank......

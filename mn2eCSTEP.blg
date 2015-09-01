@@ -1,46 +1,50 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mn2eCSTEP.aux
 The style file: mn2e.bst
 Database file #1: CSTEP_j.bib
-You've used 42 entries,
+Warning--string name "apjs" is undefined
+--line 143 of file CSTEP_j.bib
+Warning--empty journal in GREAT10star
+You've used 46 entries,
             2938 wiz_defined-function locations,
-            854 strings with 21187 characters,
-and the built_in function-call counts, 44588 in all, are:
-= -- 2648
-> -- 6842
+            870 strings with 29295 characters,
+and the built_in function-call counts, 65227 in all, are:
+= -- 3592
+> -- 11003
 < -- 5
-+ -- 2105
-- -- 2072
-* -- 3743
-:= -- 8493
++ -- 3360
+- -- 3323
+* -- 5501
+:= -- 12450
 add.period$ -- 0
-call.type$ -- 42
-change.case$ -- 851
-chr.to.int$ -- 41
-cite$ -- 42
-duplicate$ -- 734
-empty$ -- 1097
-format.name$ -- 2153
-if$ -- 8597
-int.to.chr$ -- 2
+call.type$ -- 46
+change.case$ -- 1283
+chr.to.int$ -- 44
+cite$ -- 47
+duplicate$ -- 799
+empty$ -- 1189
+format.name$ -- 3412
+if$ -- 12542
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 39
-newline$ -- 130
-num.names$ -- 170
-pop$ -- 829
+missing$ -- 43
+newline$ -- 142
+num.names$ -- 186
+pop$ -- 1258
 preamble$ -- 1
-purify$ -- 851
+purify$ -- 1283
 quote$ -- 0
-skip$ -- 1222
+skip$ -- 1680
 stack$ -- 0
-substring$ -- 841
-swap$ -- 70
+substring$ -- 904
+swap$ -- 76
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 378
-warning$ -- 0
-while$ -- 170
+type$ -- 414
+warning$ -- 1
+while$ -- 184
 width$ -- 0
-write$ -- 414
+write$ -- 450
+(There were 2 warnings)
